@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIA – eyes</title>
+    <link rel="stylesheet" href="eyes.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <a href="souspage.html"><h1>Makeup By KAIA</h1></a>
+      <p>"Your gaze is a weapon,KAIA teaches you how to use it."</p>
+      <div class = "cart">
+          <a href="panier.html">Cart (<span id = "cart-count">0</span>)</a>
+      </div>
+    </header>
+
+  <section class="product-grid">
+    <div class="product">
+      <img src="./images/hud.jpg" alt="Eyeliner Huda beauty" onclick="showImage(this)">
+      <h3>Eyeliner Huda beauty</h3>
+      <p>1500 DA</p>
+      <button onclick="addToCart ({ name: 'Eyeliner Huda beauty', price: '1500' })">Add To Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="./images/pinc.jpg" alt="Pinceaux eyes" onclick="showImage(this)">
+      <h3>Eye brush set</h3>
+      <p>1000 DA</p>
+      <button onclick="addToCart({ name: 'Eye brush set', price: '1000' })">Add To Cart</button>
+    </div>
+    <div class="product">
+      <img src="./images/cry.jpg" alt="crayon yeux noir"onclick="showImage(this)">
+      <h3>Black eyeliner pencil</h3>
+      <p>300 DA</p>
+      <button onclick="addToCart({ name: 'Black eyeliner pencil', price: '300' })">Add To Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="./images/plt.jpg" alt="Palette yeux dior"onclick="showImage(this)">
+      <h3>dior eyeshadow palette</h3>
+      <p>3500 DA</p>
+      <button onclick="addToCart({ name: 'dior eyeshadow palette', price: '3500' })">Add To Cart</button>
+    </div>
+
+    <div class="product">
+      <img src="./images/ess.jpg" alt="essence I love Extreme Crazy Volume Mascara"onclick="showImage(this)">
+      <h3>essence I love Extreme Crazy Volume Mascara</h3>
+      <p>1450 DA</p>
+      <button onclick="addToCart({ name: 'essence I love Extreme Crazy Volume Mascara', price: '1450' })">Add To Cart</button>
+    </div>
+    
+    <div class="product">
+        <img src="./images/nyx.jpg" alt="Eyeliner black NYX"onclick="showImage(this)">
+        <h3>Eyeliner black NYX</h3>
+        <p>1000 DA</p>
+        <button onclick="addToCart({ name: 'Eyeliner black NYX', price: '1000' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/sky.jpg" alt="Maybelline New York Sky high Mascara"onclick="showImage(this)">
+        <h3>Maybelline New York Sky high Mascara</h3>
+        <p>1500 DA</p>
+        <button onclick="addToCart({ name: 'Maybelline New York Sky high Mascara', price: '1500' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/kiko.jpg" alt="Eyeliner kiko"onclick="showImage(this)">
+        <h3>Eyeliner kiko</h3>
+        <p>900 DA</p>
+        <button onclick="addToCart({ name: 'Eyeliner kiko', price: '900' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/my.jpg" alt="Mascara lash sensational"onclick="showImage(this)">
+        <h3>Mascara lash sensational</h3>
+        <p>1300 DA</p>
+        <button onclick="addToCart({ name: 'Mascara lash sensational', price: '1300' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/nude.jpg" alt="Palette Nude Retoo"onclick="showImage(this)">
+        <h3>Palette Nude Retoo</h3>
+        <p>5000 DA</p>
+        <button onclick="addToCart({ name: 'Palette Nude Retoo', price: '5000' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/princ.jpg" alt="Mascara essence lash princess"onclick="showImage(this)">
+        <h3>Mascara essence lash princess</h3>
+        <p>2500 DA</p>
+        <button onclick="addToCart({ name: 'Mascara essence lash princess', price: '2500' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/seph.jpg" alt="Eyeliner blue sephora"onclick="showImage(this)">
+        <h3>Eyeliner blue sephora</h3>
+        <p>1500 DA</p>
+        <button onclick="addToCart({ name: 'Eyeliner blue sephora', price: '1500' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/up.jpg" alt="Mascara Sephora Size Up"onclick="showImage(this)">
+        <h3>Mascara Sephora Size Up</h3>
+        <p>3000 DA</p>
+        <button onclick="addToCart({ name: 'Mascara Sephora Size Up', price: '3000' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/blck.jpg" alt="Eyeliner Black sephora"onclick="showImage(this)">
+        <h3>Eyeliner Black sephora</h3>
+        <p>1700 DA</p>
+        <button onclick="addToCart({ name: 'Eyeliner Black sephora', price: '1700' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/nyxblnc.jpg" alt="Eyes pencil"onclick="showImage(this)">
+        <h3>Eyes pencil</h3>
+        <p>400 DA</p>
+        <button onclick="addToCart({ name: 'Eyes pencil', price: '400' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/gucci.jpg" alt="Mascara gucci"onclick="showImage(this)">
+        <h3>Mascara gucci</h3>
+        <p>2000 DA</p>
+        <button onclick="addToCart({ name: 'Mascara gucci', price: '2000' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/lidd.jpg" alt="Liquid Eyeliner & Eyeliner Pencils elf"onclick="showImage(this)">
+        <h3>Liquid Eyeliner & Eyeliner Pencils elf</h3>
+        <p>1200 DA</p>
+        <button onclick="addToCart({ name: 'Liquid Eyeliner & Eyeliner Pencils elf', price: '1200' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/gel.jpg" alt="Gel sourcil"onclick="showImage(this)">
+        <h3>eyebrow gel</h3>
+        <p>500 DA</p>
+        <button onclick="addToCart({ name: 'eyebrow gel', price: '500' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/kikobrown.jpg" alt="Mascara kiko brown"onclick="showImage(this)">
+        <h3>Mascara kiko brown</h3>
+        <p>1200 DA</p>
+        <<button onclick="addToCart({ name: 'Mascara kiko brown', price: '1200' })">Add To Cart</button>
+      </div>
+      
+    <div class="product">
+        <img src="./images/kikopencil.jpg" alt="Eyeliner pencil kiko"onclick="showImage(this)">
+        <h3>Eyeliner pencil kiko</h3>
+        <p>700 DA</p>
+        <button onclick="addToCart({ name: 'Eyeliner pencil kiko', price: '700' })">Add To Cart</button>
+      </div>
+</section>
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2025 KAIA Beauty. All rights reserved.</p>
+</footer>
+<script src="cart.js"></script>
+
+<div id="popup" class="popup" onclick="hidePopup()">
+  <img id="popup-img" src="" alt="">
+</div>
+
+
+</body>
+</html>

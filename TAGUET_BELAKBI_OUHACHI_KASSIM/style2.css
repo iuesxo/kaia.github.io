@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #f9b4ab, #fde1d5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur formulaire */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre */
+.container h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Champs uniformisés */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    font-size: 16px;
+    background-color: #fefefe;
+    transition: border 0.3s ease;
+}
+
+input:focus {
+    border-color: #f9b4ab;
+    outline: none;
+}
+
+/* Bouton */
+button {
+    background-color: #f9b4ab;
+    color: white;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e89689;
+}
+
+/* Lien inscription */
+.container p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.container p a {
+    color: #1b1b1b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.container p a:hover {
+    color: #e89689;
+}
+
+
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+.search-bar input {
+    width: 200px;            /* ✅ Réduit la largeur */
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    transition: width 0.3s ease;
+}
+
+/* Facultatif : effet d’agrandissement au focus */
+.search-bar input:focus {
+    width: 160px;
+    outline: none;
+}
+
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+nav .menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+.menu ul li{
+    margin-left: 7px;
+}
+.menu ul li:first-child{
+    margin-left: 0;
+}
+.menu ul li a{
+    text-align: none;
+    color: #fff;
+    font-size: 14px ;
+    font-weight: 500;
+    padding: 0px 15px;
+    border-radius:  20px;
+    transition: all 0.3s ease;
+} 
+.menu ul li a:hover{
+    background-color: #fff ;
+    color: black;
+}

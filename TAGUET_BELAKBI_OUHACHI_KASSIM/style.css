@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://www.example.com/makeup-tutorial-bg.jpg'); /* Image d'arrière-plan */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: rgb(248, 159, 174); /* Rose pastel */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0; /* signifie que la barre de navigation sera placée à 0 pixel du haut de la fenêtre du navigateur*/
+    left: 0;/*signifie que la barre de navigation commence à 0 pixel du côté gauche de l'écran*/
+    right: 0;/*signifie que la barre de navigation commence à 0 pixel du côté droite de l'écran*/
+    z-index: 10;/* garantit que la barre de navigation reste au-dessus des autres éléments qui pourraient se trouver sous elle (comme des images ou du contenu).*/
+}
+
+.navbar .logo { /* signifie que le style qui suit ne s'applique qu'aux éléments à l'intérieur de la barre de navigation.*/
+    font-size: 24px; /*taille de l'icolne*/
+    color: white;
+    font-weight: bold; /*gras*/
+    margin-right: 20px; /* Espace entre le logo et l'icône Home */
+}
+
+.navbar .home-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer; /*curseur devient une main quand on le pointe vers home*/
+}
+
+.navbar .home-icon:hover {
+    color: #e8cdda;
+}
+
+.navbar .search-bar {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .search-bar input {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Header principal */
+header {
+    margin-top: 60px; /* Pour éviter que le header soit masqué par la navbar */
+    background-color: linear-gradient(white,rgb(250, 177, 190)); /* Rose pastel semi-transparent */
+    color: rgb(233, 125, 143);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.section {
+    background-color: rgba(255, 255, 255, 0.6); /* Fond blanc semi-transparent pour les sections */
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.section:hover {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #dbbccb;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.section p {
+    font-size: 16px;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: white;
+    z-index: 2;
+    padding: 10px;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./images/lips.jfif');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.section .content {
+    flex-grow: 1;
+}
+
+/* Sections spécifiques */
+.section.eyes::before {
+    background-image: url('./images/yeux.jpg');
+}
+
+.section.skin::before {
+    background-image: url('./images/skin.jpg');
+}
+
+.arrplan{
+    background-image:  url('./images/back.jpeg')
+} 
+
+
+
+
+
+nav{
+    position:fixed;
+    background-color: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+}
+nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+
+}
+nav .menu .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+
+}
+.menu ul li{
+    margin-left: 7px;
+}
+.menu ul li:first-child{
+    margin-left: 0;
+}
+.menu ul li a{
+    text-align: none;
+    color: #fff;
+    font-size: 18px ;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius:  5px;
+    transition: all 0.3s ease;
+} 
+.menu ul li a:hover{
+    background-color: #fff ;
+    color: black;
+}
